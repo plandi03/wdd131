@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pablo">
+    <meta name="description" content="Pablo Landivar WWD 131 - Welcome to Bolivia">
+    <meta name="keywords" content="Bolivia, Travel, South America, Pablo Landivar">
+    <title>Place Page</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Link to JavaScript -->
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Bolivia</h1>
+    </header>
+    <nav></nav> <!-- Línea roja de navegación -->
+    <main class="grid-container">
+        <!-- Container 1: Data -->
+        <div class="grid-item data">
+            <h2>Data</h2>
+            <p>Population: 11,673,021</p>
+            <p>Capital: Sucre (constitutional), La Paz (administrative)</p>
+            <p>Official Languages: Spanish, Quechua, Aymara, and others</p>
+            <p>Currency: Boliviano (BOB)</p>
+            <p>Area: 1,098,581 km²</p>
+            <p>Time Zone: GMT-4</p>
+            <p>Major Exports: Natural gas, minerals, soybeans</p>
+        </div>
+
+        <!-- Empty Containers -->
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+
+        <!-- Container 9: Weather -->
+        <div class="grid-item weather">
+            <h2>Weather ⛅</h2>
+            <div class="weather-icon">
+                <img src="images/weather_icon.svg" alt="Weather Icon">
+            </div>
+            <p>Sunny, 25°C</p>
+            <p>Wind Speed: 10 km/h</p>
+            <p>Wind Chill: <span id="windChill">N/A</span></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span>Pablo Landivar WDD 131 - Dynamic Web Fundamentals</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

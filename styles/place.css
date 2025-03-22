@@ -1,0 +1,210 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Variables */
+:root {
+    --primary-color: #006a4e;
+    --secondary-color: #d21034;
+    --background-color: rgba(255, 255, 255, 0.8);
+    --text-color: #333;
+    --white: #ffffff;
+    --accent-color: #ffcc00;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url('../images/hero.webp'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Navigation Bar */
+nav {
+    height: 40px; /* Altura de la línea */
+    background-color: var(--secondary-color); /* Color rojo */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.hero picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(3, 1fr); /* 3 filas */
+    gap: 1rem;
+    flex: 1; /* Ocupa el espacio restante del body */
+    padding: 1rem;
+}
+
+/* Grid Items */
+.grid-item {
+    background-color: transparent; /* Hacer invisibles los contenedores vacíos */
+    border-radius: 8px;
+    box-shadow: none; /* Eliminar sombras */
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Weather Section */
+.weather {
+    grid-column: 3 / 4; /* Tercera columna */
+    grid-row: 3 / 4; /* Tercera fila */
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: var(--background-color); /* Fondo semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather h2 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    position: relative;
+}
+
+/* Pseudo-element for Weather Icon */
+.weather h2::after {
+    content: "⛅"; /* Weather icon for large view */
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    color: var(--accent-color);
+    display: none; /* Hidden by default */
+}
+
+.weather-icon img {
+    width: 50px;
+    height: 50px;
+    margin: 1rem 0;
+}
+
+.weather p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Data Section */
+.data {
+    grid-column: 1 / 2; /* Primera columna */
+    grid-row: 1 / 2; /* Primera fila */
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: var(--background-color); /* Fondo semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.data h2 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    position: relative;
+}
+
+/* Pseudo-element for Weather Icon */
+.data h2::after {
+    content: "⛅"; /* Weather icon for large view */
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    color: var(--accent-color);
+    display: none; /* Hidden by default */
+}
+
+.data img {
+    width: 50px;
+    height: 50px;
+    margin: 1rem 0;
+}
+
+.data p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .weather h2::after {
+        display: inline; /* Show pseudo-element for larger screens */
+    }
+
+    .weather-icon img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-rows: repeat(9, auto); /* 9 filas */
+    }
+
+    .data {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .weather {
+        grid-column: 1 / 2;
+        grid-row: 9 / 10;
+    }
+}
+
+@media (min-width: 1024px) {
+    .weather h2 {
+        font-size: 2rem;
+    }
+
+    .weather h2::after {
+        font-size: 2rem;
+    }
+
+    .weather-icon img {
+        width: 100px;
+        height: 100px;
+    }
+}
