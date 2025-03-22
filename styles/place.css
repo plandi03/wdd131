@@ -13,11 +13,13 @@
     --text-color: #333;
     --white: #ffffff;
     --accent-color: #ffcc00;
+    --font-primary: 'Roboto', sans-serif; /* Primary font */
+    --font-secondary: 'Boldonse', serif; /* Secondary font */
 }
 
 /* Body Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-primary); /* Use Roboto as the default font */
     line-height: 1.6;
     background-image: url('../images/hero.webp'); /* Imagen de fondo */
     background-size: cover;
@@ -35,6 +37,7 @@ header {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 1rem 0;
+    font-family: var(--font-secondary); /* Use Boldonse for the header */
 }
 
 header h1 {
@@ -89,12 +92,14 @@ nav {
     background-color: var(--background-color); /* Fondo semitransparente */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: var(--font-primary); /* Use Roboto for the weather section */
 }
 
 .weather h2 {
     font-size: 1.5rem;
     color: var(--secondary-color);
     position: relative;
+    font-family: var(--font-secondary); /* Use Boldonse for the weather heading */
 }
 
 /* Pseudo-element for Weather Icon */
@@ -127,21 +132,14 @@ nav {
     background-color: var(--background-color); /* Fondo semitransparente */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: var(--font-primary); /* Use Roboto for the data section */
 }
 
 .data h2 {
     font-size: 1.5rem;
     color: var(--secondary-color);
     position: relative;
-}
-
-/* Pseudo-element for Weather Icon */
-.data h2::after {
-    content: "⛅"; /* Weather icon for large view */
-    font-size: 1.5rem;
-    margin-left: 0.5rem;
-    color: var(--accent-color);
-    display: none; /* Hidden by default */
+    font-family: var(--font-secondary); /* Use Boldonse for the data heading */
 }
 
 .data img {
@@ -162,6 +160,7 @@ footer {
     color: var(--white);
     padding: 1rem 0;
     font-size: 0.9rem;
+    font-family: var(--font-primary); /* Use Roboto for the footer */
 }
 
 /* Media Queries */
