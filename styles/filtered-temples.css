@@ -1,0 +1,107 @@
+:root {
+    --primary-color-Rich-black: #0D1B2A;
+    --secondary-color-Oxford-Blue: #1B263B;
+    --accent1-color-YInMn-Blue: #415A77;
+    --accent2-color-SilverLake-Blue: #778DA9;
+    --accent3-color-Platinum: #E0E1DD;
+
+    --poppins-regular: "Poppins", sans-serif;
+    --poppins-regular-weight: 400;
+    --poppins-thin: "Poppins", sans-serif;
+    --poppins-thin-weight: 100;
+
+    --headline-color-on-white: var(--primary-color-Rich-black);
+    --headline-color-on-color: var(--accent3-color-Platinum);
+    --paragraph-color-on-white: var(--primary-color-Rich-black);
+    --paragraph-color-on-color: var(--accent3-color-Platinum);
+    --paragraph-background-color: var(--secondary-color-Oxford-Blue);
+    --nav-link-color: var(--accent3-color-Platinum);
+    --nav-background-color: var(--secondary-color-Oxford-Blue);
+    --nav-hover-link-color: var(--accent2-color-SilverLake-Blue);
+    --nav-hover-background-color: var(--primary-color-Rich-black);
+}
+
+body {
+    font-family: var(--poppins-regular);
+    font-weight: var(--poppins-regular-weight);
+    margin: 0;
+    padding: 0;
+    background-color: var(--paragraph-background-color);
+    color: var(--headline-color-on-white);
+}
+
+header {
+    background-color: var(--nav-background-color);
+    color: var(--headline-color-on-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background-color: var(--nav-background-color);
+    color: var(--accent1-color);
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.navigation button {
+    padding: 0.5rem 1rem;
+    background-color: var(--accent1-color-YInMn-Blue);
+    color: var(--headline-color-on-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navigation button:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+figure {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+figcaption {
+    font-size: 1rem;
+    color: var(--paragraph-color-on-white);
+}
+
+footer {
+    background-color: var(--nav-background-color);
+    color: var(--headline-color-on-color);
+    text-align: center;
+    padding: 1rem;
+}
