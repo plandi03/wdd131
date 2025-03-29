@@ -22,7 +22,7 @@
 }
 
 body {
-    font-family: var(--poppins-regular);
+    font-family: var(--poppins-regular), sans-serif;
     font-weight: var(--poppins-regular-weight);
     margin: 0;
     padding: 0;
@@ -72,6 +72,20 @@ header h1 {
     color: var(--nav-hover-link-color);
 }
 
+.navigation a {
+    padding: 0.5rem 1rem;
+    background-color: var(--accent1-color-YInMn-Blue);
+    color: var(--headline-color-on-color);
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.navigation a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -104,4 +118,24 @@ footer {
     color: var(--headline-color-on-color);
     text-align: center;
     padding: 1rem;
+}
+
+.external-links {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.external-links a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent2-color-SilverLake-Blue);
+    color: var(--headline-color-on-color);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.external-links a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
 }
