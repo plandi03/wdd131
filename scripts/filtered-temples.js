@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (criteria === "large") {
             filtered = temples.filter(temple => temple.area > 90000);
         } else if (criteria === "small") {
-            filtered = temples.filter(temple => temple.area < 10000);
+            filtered = temples.filter(temple => temple.area < 50000);
         }
 
         displayTemples(filtered);
