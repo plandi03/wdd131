@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
             figure.innerHTML = `
                 <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
                 <figcaption>
-                    <h3>${temple.templeName}</h3>
+                    <h2>${temple.templeName}</h2>
                     <p>Location: ${temple.location}</p>
                     <p>Dedicated: ${temple.dedicated}</p>
                     <p>Area: ${temple.area} sq ft</p>
