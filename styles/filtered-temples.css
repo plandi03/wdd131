@@ -21,6 +21,8 @@
     --nav-hover-background-color: var(--primary-color-Rich-black);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
     font-family: var(--poppins-regular), sans-serif;
     font-weight: var(--poppins-regular-weight);
