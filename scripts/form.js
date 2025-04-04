@@ -21,7 +21,7 @@ if (!localStorage.getItem("reviewCount")) {
     localStorage.setItem("reviewCount", 0);
 }
 
-document.querySelector("form").addEventListener("submit", () => {
+document.querySelector("form").addEventListener("Submit", () => {
     let reviewCount = parseInt(localStorage.getItem("reviewCount"));
     localStorage.setItem("reviewCount", reviewCount + 1);
 });
