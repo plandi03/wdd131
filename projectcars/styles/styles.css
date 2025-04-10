@@ -10,7 +10,7 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 1.6;;
 }
 
 header {
@@ -63,16 +63,15 @@ nav a:hover {
 
 
 section {
-    margin: 2rem 20%;
+    margin: 2rem auto; /* Centra horizontalmente */
     padding: 1rem;
     max-width: 800px;
     border: 1px solid var(--primary-color);
     border-radius: 8px;
     background-color: var(--background-color);
-    margin: 4rem 10%; /* More space between sections and reduced border space */
-    box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.5); /* Bigger shadow, also on the left side */
-    text-align: center; /* Center the text */
-    overflow: hidden; /* Ensure content, including images, stays inside the container */
+    box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.5); /* Sombra */
+    text-align: center; /* Centra el texto */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
 }
 
 section img {
