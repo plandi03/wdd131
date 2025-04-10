@@ -1,0 +1,188 @@
+:root {
+    --primary-color: #D32F2F; /* Red */
+    --text-color: #333333; /* Black */
+    --background-color: #FFFFFF; /* White */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 2px;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    align-content: end;
+    margin: 0;
+}
+
+nav a {
+    color: var(--background-color);
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav a:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border-radius: 20px; /* Ensure rounded corners on hover */
+}
+
+
+section {
+    margin: 2rem 20%;
+    padding: 1rem;
+    max-width: 800px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: var(--background-color);
+    margin: 4rem 10%; /* More space between sections and reduced border space */
+    box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.5); /* Bigger shadow, also on the left side */
+    text-align: center; /* Center the text */
+    overflow: hidden; /* Ensure content, including images, stays inside the container */
+}
+
+section img {
+    max-width: 100%; /* Ensure the image stays within the container */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+    float: none; /* Remove float to keep the image inside the container */
+    margin: 1rem auto; /* Center the image and add spacing */
+    display: block; /* Center the image horizontally */
+}
+
+section h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+section button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-bottom: 3px solid var(--primary-color); /* Border at the bottom with primary color */
+    padding: 0.5rem 1rem;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: bold; /* Make the text bold */
+}
+
+button:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border-radius: 20px; /* Ensure rounded corners on hover */
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Carousel styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    min-width: 100%;
+    height: auto;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Gallery button */
+#gallery-button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gallery-button:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
