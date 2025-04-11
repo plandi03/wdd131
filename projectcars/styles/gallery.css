@@ -1,0 +1,192 @@
+:root {
+    --primary-color: #902121; /* Red */
+    --secondary-color: #1B263B; /* Oxford Blue */
+    --accent1-color: #415A77; /* YInMn Blue */
+    --accent2-color: #778DA9; /* Silver Lake Blue */
+    --accent3-color: #E0E1DD; /* Platinum */
+
+    --font-family: "Poppins", sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-thin: 100;
+
+    --headline-color: var(--accent3-color);
+    --paragraph-color: var(--accent3-color);
+    --background-color: #dad8c9; /* White */
+    --button-hover-bg: #ffffff; /* White */
+    --button-hover-color: #902121; /* Red */
+    --text-color: #333333; /* Black */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: var(--font-weight-regular);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.navigation button {
+    padding: 0.5rem 1rem;
+    background-color: var(--accent1-color);
+    color: var(--headline-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navigation button:hover {
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-color);
+}
+
+.navigation a {
+    padding: 0.5rem 1rem;
+    background-color: var(--accent1-color);
+    color: var(--headline-color);
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.navigation a:hover {
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+figure {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+figcaption {
+    font-size: 1rem;
+    color: var(--paragraph-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.external-links {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.external-links a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent2-color);
+    color: var(--headline-color);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.external-links a:hover {
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-color);
+}
+
+#gallery {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+#gallery-buttons {
+    margin-bottom: 1rem;
+}
+
+#gallery-buttons button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#gallery-buttons button:hover {
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-color);
+    border: 1px solid var(--primary-color);
+}
+
+#gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+#gallery-container figure {
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#gallery-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#gallery-container figcaption {
+    margin-top: 0.5rem;
+    color: var(--text-color);
+}
