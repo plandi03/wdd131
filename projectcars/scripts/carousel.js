@@ -39,4 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("about-button").addEventListener("click", () => {
         window.location.href = "about.html";
     });
+
+    document.getElementById("contact-button").addEventListener("click", () => {
+        window.location.href = "contact.html";
+    });
 });

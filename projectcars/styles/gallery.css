@@ -154,7 +154,7 @@ footer {
     padding: 1rem;
 }
 
-.external-links {
+external-links {
     margin-top: 2rem;
     text-align: center;
 }
@@ -226,4 +226,25 @@ footer {
 #gallery-container figcaption {
     margin-top: 0.5rem;
     color: var(--text-color);
+}
+
+/* Responsive styles for phones and tablets */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #gallery-container {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+    #gallery-buttons button {
+        width: 100%; /* Full width buttons */
+    }
 }
