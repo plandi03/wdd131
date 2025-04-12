@@ -31,4 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Ajusta el carrusel al cargar
     updateCarousel();
+
+    document.getElementById("gallery-button").addEventListener("click", () => {
+        window.location.href = "gallery.html";
+    });
+
+    document.getElementById("about-button").addEventListener("click", () => {
+        window.location.href = "about.html";
+    });
 });

@@ -31,11 +31,48 @@ header {
     background-color: var(--primary-color);
     color: var(--background-color);
     padding: 1rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 header h1 {
     margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 2px;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    align-content: end;
+    margin: 0;
+}
+
+nav a {
+    color: var(--background-color);
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav a:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border-radius: 20px; /* Ensure rounded corners on hover */
 }
 
 #menu {
