@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pablo Landivar">
+    <meta name="description" content="Sports Cars - Explore the world of high-performance vehicles.">
+    <meta name="keywords" content="Sports Cars, High-Performance Vehicles, Car Gallery">
+    <title>About Us</title>
+
+
+    <meta property="og:title" content="cars">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero.webp">        <meta property="og:image:height" content="630">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:description" content="Explore the world of high-performance vehicles.">
+    <meta property="og:site_name" content="Sports Cars">
+    <meta property="og:url" content="https://plandi03.github.io/wdd131/projectcars/index.html">
+    <meta property="og:logo" content="images/logo.webp">
+    
+    <link rel="stylesheet" href="styles/about.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Sports Cars Logo">
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-us">
+            <h2>Who We Are</h2>
+            <p>Welcome to Sports Cars! We are passionate about high-performance vehicles and dedicated to sharing our love for sports cars with enthusiasts around the world.</p>
+            <p>Our mission is to provide detailed information, stunning visuals, and a platform for car lovers to explore the beauty and innovation of sports cars.</p>
+        </section>
+        <section id="our-location">
+            <h2>Our Location</h2>
+            <p>Visit us at our headquarters or explore our collection online. We are located in the heart of the automotive world!</p>
+            <div class="map-container">
+                <!-- Google Maps Embed -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.4194154846818!3d37.77492977975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f1f1e6b1%3A0x4c8b8b8b8b8b8b8b!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1681234567890!5m2!1sen!2sus" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Pablo Landivar - WDD131 - All rights reserved.</p>
+    </footer>
+    <script>
+        // Update the current year in the footer
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

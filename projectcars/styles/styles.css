@@ -121,8 +121,9 @@ footer p {
 /* Carousel styles */
 .carousel {
     position: relative;
-    width: 100%;
-    max-width: 800px;
+    width: 80%;
+    max-width: 400px;
+    max-height: 400px;
     margin: 2rem auto;
     overflow: hidden;
     border-radius: 8px;
