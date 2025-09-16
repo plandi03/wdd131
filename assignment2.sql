@@ -1,3 +1,8 @@
+-- assignment2.sql
+-- Task 1: Six SQL queries for CSE340 Assignment 2
+-- Author: Pablo Landivar
+-- Date: 2003 10 13
+
 -- 1. Insert Tony Stark
 INSERT INTO account (account_firstname, account_lastname, account_email, account_password)
 VALUES ('Tony', 'Stark', 'tony@starkent.com', 'Iam1ronM@n');
@@ -5,11 +10,11 @@ VALUES ('Tony', 'Stark', 'tony@starkent.com', 'Iam1ronM@n');
 -- 2. Update Tony Stark to Admin
 UPDATE account
 SET account_type = 'Admin'
-WHERE account_email = 'tony@starkent.com';
+WHERE account_email = 'plandivarmamani@byupathway.edu';
 
 -- 3. Delete Tony Stark
 DELETE FROM account
-WHERE account_email = 'tony@starkent.com';
+WHERE account_email = 'plandivarmamani@byupathway.edu';
 
 -- 4. Update GM Hummer description using REPLACE
 UPDATE inventory
